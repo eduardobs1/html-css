@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 400px;
+            border-collapse: collapse;
+            position: relative;
+        }
+
+        td,
+        th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        caption {
+            font-size: 1.3em;
+            font-weight: bolder;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
+        thead,
+        tfoot {
+            background-color: rgb(76, 76, 76);
+            color: white;
+        }
+
+        thead > tr > th{
+            position: sticky;
+            top: -1px;
+            background-color: rgb(76, 76, 76);
+        }
+
+        tbody > tr:nth-child(odd) {
+            background-color: lightgray;
+        }
+
+        .num {
+            text-align: right;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Uso de Tabelas Grandes</h1>
+    <!-- ANATOMIA PARA TABELAS GRANDES
+        TABLE
+            CAPTION
+        THEAD
+            TR, TD, TH
+        TBODY
+            TR, TD, TH
+        TFOOT
+            TR, TD, TH -->
+
+    <table>
+        <caption>População das Unidades Federativas</caption>
+
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">44 420 459</td>
+            </tr>
+
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">20 538 718</td>
+            </tr>
+
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">16 054 524</td>
+            </tr>
+
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14 136 417</td>
+            </tr>
+
+            <tr>
+                <td>Paraná</td>
+                <td class="num">11 443 208</td>
+            </tr>
+
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">10 693 929</td>
+            </tr>
+
+            <tr>
+                <td>Pernambuco</td>
+                <td class="num">8 796 448</td>
+            </tr>
+
+            <tr>
+                <td>Ceará</td>
+                <td class="num">8 452 381</td>
+            </tr>
+
+            <tr>
+                <td>Pará</td>
+                <td class="num">7 581 051</td>
+            </tr>
+
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">6 248 436</td>
+            </tr>
+
+            <tr>
+                <td>Goiás</td>
+                <td class="num">6 154 996</td>
+            </tr>
+
+            <tr>
+                <td>Maranhão</td>
+                <td class="num">6 800 605</td>
+            </tr>
+
+            <tr>
+                <td>Espírito Santo</td>
+                <td class="num">4 064 052</td>
+            </tr>
+            <tr>
+                <td>Paraı́ba</td>
+                <td class="num">4 039 277</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Norte</td>
+                <td class="num">3 534 165</td>
+            </tr>
+            <tr>
+                <td>Alagoas</td>
+                <td class="num">3 351 543</td>
+            </tr>
+            <tr>
+                <td>Piauı́</td>
+                <td class="num">3 281 480</td>
+            </tr>
+            <tr>
+                <td>Distrito Federal</td>
+                <td class="num">3 055 149</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso</td>
+                <td class="num">3 035 122</td>
+            </tr>
+            <tr>
+                <td>Sergipe</td>
+                <td class="num">2 206 392</td>
+            </tr>
+            <tr>
+                <td>Rondônia</td>
+                <td class="num">1 562 409</td>
+            </tr>
+            <tr>
+                <td>Tocantins</td>
+                <td class="num">1 383 445</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <th scope="row">Total de Habitantes</th>
+                <td class="num"><strong>213 421 037</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate quod beatae exercitationem corrupti, consequatur perferendis quis similique officia repudiandae officiis facere assumenda placeat excepturi inventore non ipsa mollitia. Suscipit, excepturi! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam eos porro animi sint amet est fugiat non, quam, quibusdam aut tenetur error at tempora id dolore fugit voluptas dicta! Mollitia.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur ex debitis neque aspernatur similique numquam, quasi enim dicta, labore aut sit eaque? Pariatur assumenda nam veritatis voluptates quos amet voluptatibus?
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam repudiandae quibusdam a quos, doloribus quasi distinctio aspernatur iste nam tenetur sed eum modi consequuntur sunt cupiditate, libero dolorem eius assumenda!
+        </p>
+
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate quod beatae exercitationem corrupti, consequatur perferendis quis similique officia repudiandae officiis facere assumenda placeat excepturi inventore non ipsa mollitia. Suscipit, excepturi! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam eos porro animi sint amet est fugiat non, quam, quibusdam aut tenetur error at tempora id dolore fugit voluptas dicta! Mollitia.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur ex debitis neque aspernatur similique numquam, quasi enim dicta, labore aut sit eaque? Pariatur assumenda nam veritatis voluptates quos amet voluptatibus?
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam repudiandae quibusdam a quos, doloribus quasi distinctio aspernatur iste nam tenetur sed eum modi consequuntur sunt cupiditate, libero dolorem eius assumenda!
+        </p>
+
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate quod beatae exercitationem corrupti, consequatur perferendis quis similique officia repudiandae officiis facere assumenda placeat excepturi inventore non ipsa mollitia. Suscipit, excepturi! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam eos porro animi sint amet est fugiat non, quam, quibusdam aut tenetur error at tempora id dolore fugit voluptas dicta! Mollitia.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur ex debitis neque aspernatur similique numquam, quasi enim dicta, labore aut sit eaque? Pariatur assumenda nam veritatis voluptates quos amet voluptatibus?
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam repudiandae quibusdam a quos, doloribus quasi distinctio aspernatur iste nam tenetur sed eum modi consequuntur sunt cupiditate, libero dolorem eius assumenda!
+        </p>
+
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate quod beatae exercitationem corrupti, consequatur perferendis quis similique officia repudiandae officiis facere assumenda placeat excepturi inventore non ipsa mollitia. Suscipit, excepturi! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam eos porro animi sint amet est fugiat non, quam, quibusdam aut tenetur error at tempora id dolore fugit voluptas dicta! Mollitia.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur ex debitis neque aspernatur similique numquam, quasi enim dicta, labore aut sit eaque? Pariatur assumenda nam veritatis voluptates quos amet voluptatibus?
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam repudiandae quibusdam a quos, doloribus quasi distinctio aspernatur iste nam tenetur sed eum modi consequuntur sunt cupiditate, libero dolorem eius assumenda!
+        </p>
+
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate quod beatae exercitationem corrupti, consequatur perferendis quis similique officia repudiandae officiis facere assumenda placeat excepturi inventore non ipsa mollitia. Suscipit, excepturi! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam eos porro animi sint amet est fugiat non, quam, quibusdam aut tenetur error at tempora id dolore fugit voluptas dicta! Mollitia.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur ex debitis neque aspernatur similique numquam, quasi enim dicta, labore aut sit eaque? Pariatur assumenda nam veritatis voluptates quos amet voluptatibus?
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam repudiandae quibusdam a quos, doloribus quasi distinctio aspernatur iste nam tenetur sed eum modi consequuntur sunt cupiditate, libero dolorem eius assumenda!
+        </p>
+
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate quod beatae exercitationem corrupti, consequatur perferendis quis similique officia repudiandae officiis facere assumenda placeat excepturi inventore non ipsa mollitia. Suscipit, excepturi! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam eos porro animi sint amet est fugiat non, quam, quibusdam aut tenetur error at tempora id dolore fugit voluptas dicta! Mollitia.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur ex debitis neque aspernatur similique numquam, quasi enim dicta, labore aut sit eaque? Pariatur assumenda nam veritatis voluptates quos amet voluptatibus?
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam repudiandae quibusdam a quos, doloribus quasi distinctio aspernatur iste nam tenetur sed eum modi consequuntur sunt cupiditate, libero dolorem eius assumenda!
+        </p>
+</body>
+
+</html>
